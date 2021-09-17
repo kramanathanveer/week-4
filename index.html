@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4</title>
+</head>
+<body>
+    
+    <div id="app">
+        <h2>Declarative rendering</h2>
+        <p>The number below changes everytime the user clicks on refresh refresh</p>
+        <p>{{randomNumber}}</p>
+    </div>
+    <div id="app-2">
+        <h2>Conditions and Loops </h2>
+        <p>Click on the button to see the message</p>
+        <button onclick="toggleSee()">Toggle message visibility</button>
+        <p v-if="seen">This message is visible now</p>
+        <p>Displays a list of items from an array</p>
+       <ul>
+           <li v-for="item in items">
+                {{item}}
+           </li>
+        </ul>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>
